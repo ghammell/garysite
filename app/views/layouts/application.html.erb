@@ -10,9 +10,13 @@
 
 <%= yield %>
 
-  <section id='nav'>
+  <div id='main'>
+    <%= render 'welcome/index' %>
+  </div>
+
+<!--   <section id='nav'>
     <%= render 'welcome/nav' %>
-  </section>
+  </section> -->
 
   <footer>
     <%= image_tag('SF_skyline.png', :id => 'skyline_image') %>

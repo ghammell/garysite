@@ -1,7 +1,33 @@
 body {
   background-color: #141E34;
   margin: 0;
-  font-family: helvetica;
+  font-family: 'helvetica neue';
+
+  #main{
+    width: 80%;
+    max-width: 800px;
+    border-left: 1px solid #A1BDFF;
+    border-right: 1px solid #A1BDFF;
+    margin: 0 auto;
+    padding: 1%;
+
+    .post {
+      background-color: rgba(161, 189, 255, 0.8);
+      padding: 2%;
+      margin: 20px 0;
+      box-shadow: 2px 2px 5px black;
+      z-index: 2;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .post_title {
+        margin: 0;
+      }
+    }
+  }
 
   #nav {
     height: 100vh;
@@ -10,6 +36,7 @@ body {
     float: left;
     padding: 1%;
     overflow: scroll;
+    position: absolute;
 
     #who {
       text-align: center;
@@ -34,7 +61,7 @@ footer {
     position: absolute;
     bottom:0;
     right: 0px;
-    z-index: 100;
+    z-index: 1;
   }
 
   #moon_image {
