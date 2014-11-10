@@ -1,0 +1,25 @@
+body {
+  background-color: #141E34;
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: -50px;
+
+  #skyline_image {
+    position: absolute;
+    bottom:0;
+    left: -10px;
+    width: 101%;
+    z-index: 100;
+  }
+
+  #moon {
+    position: absolute;
+    height: 150px;
+    bottom:100px;
+    left: 100px;
+  }
+}
