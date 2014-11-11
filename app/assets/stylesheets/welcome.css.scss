@@ -17,7 +17,7 @@ body {
       margin: 0;
       right: 0;
       left: 0;
-      top: -82px;
+      top: -86px;
       padding: 5px;
       background-color: rgba(255, 255, 255, 0.9) !important;
 
@@ -29,6 +29,7 @@ body {
 
       .banner_logos {
         float: right;
+        margin-top: 0px;
         .logo {
           position: relative;
           height: 50px;
@@ -123,7 +124,12 @@ body {
       }
 
       .more {
-        color: #212C43;
+        color: white;
+      }
+
+      .less {
+        display: none;
+        color: white;
       }
 
       .hidden_info {

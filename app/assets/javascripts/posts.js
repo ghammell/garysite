@@ -4,17 +4,24 @@ $(document).ready(function(){
 })
 
 var bindPostHoverEvents = function() {
-  $('.post').hover(function(){
-    post = $(this)
-    $(this).children('.more').slideUp( function() {
-      post.children('.hidden_info').slideDown()
+  $('.more').hover(function(){
+    moreLink = $(this)
+    moreLink.slideUp( function() {
+      moreLink.siblings('.hidden_info').slideDown()
+      moreLink.siblings('.less').slideDown()
     })
-  }, function(){
-    $(this).children('.hidden_info').slideUp( function() {
-      post.children('.more').slideDown()
+  })
+
+  $('.less').hover(function() {
+    lessLink = $(this)
+    lessLink.slideUp(function(){
+      lessLink.siblings('.hidden_info').slideUp()
+      lessLink.siblings('.more').slideDown()
     })
   })
 }
+
+
 
 var bindBannerShowEvent = function() {
   var lastScrollTop = 0;
@@ -23,7 +30,7 @@ var bindBannerShowEvent = function() {
     if (currentTop > 200) {
       $('#personal_info_banner').css('top', '0px')
     } else {
-      $('#personal_info_banner').css('top', '-82px')
+      $('#personal_info_banner').css('top', '-86px')
     }
   });
 }
