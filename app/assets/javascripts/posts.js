@@ -21,13 +21,10 @@ var bindPostHoverEvents = function() {
   })
 }
 
-
-
 var bindBannerShowEvent = function() {
-  var lastScrollTop = 0;
   $(window).scroll(function(event){
     var currentTop = $(this).scrollTop();
-    if (currentTop > 200) {
+    if (currentTop > 350) {
       $('#personal_info_banner').css('top', '0px')
     } else {
       $('#personal_info_banner').css('top', '-86px')
