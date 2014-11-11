@@ -58,6 +58,33 @@ body {
       span {
         color: rgb(161, 189, 255);
       }
+
+      #skills_header {
+        text-align: center;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #a1bdff;
+
+        span {
+          color: #a1bdff;
+        }
+      }
+
+      #skills {
+        margin: 0;
+        padding: 10px 0 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #a1bdff;
+
+        li {
+          list-style: none;
+          display: inline;
+          padding: 5px;
+          background: #262B34;
+          color: white;
+          margin: 10px 0;
+          font-size: 12px;
+        }
+      }
     }
 
     #project_headline {
@@ -75,8 +102,14 @@ body {
       border: 2px solid white;
       transition: all 0.2s;
 
+      .post_logo {
+        height: 50px;
+        float: right;
+      }
+
       .banner_logos {
         text-align: center;
+        margin-top: 20px;
         .logo {
           position: relative;
           height: 50px;
@@ -143,7 +176,7 @@ body {
 footer {
   width: 100%;
   position: fixed;
-  bottom: -50px;
+  bottom: -40px;
 
   #skyline_image {
     position: absolute;
