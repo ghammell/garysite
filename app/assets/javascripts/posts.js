@@ -4,7 +4,7 @@ $(document).ready(function(){
 })
 
 var bindPostHoverEvents = function() {
-  $('.more').hover(function(){
+  $('.more').on('click', function(){
     moreLink = $(this)
     moreLink.slideUp( function() {
       moreLink.siblings('.hidden_info').slideDown()
@@ -12,7 +12,7 @@ var bindPostHoverEvents = function() {
     })
   })
 
-  $('.less').hover(function() {
+  $('.less').on('click', function() {
     lessLink = $(this)
     lessLink.slideUp(function(){
       lessLink.siblings('.hidden_info').slideUp()
