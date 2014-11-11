@@ -6,12 +6,12 @@ $(document).ready(function(){
 var bindPostHoverEvents = function() {
   $('.post').hover(function(){
     post = $(this)
-    $(this).children('.more').fadeOut( function() {
+    $(this).children('.more').slideUp( function() {
       post.children('.hidden_info').slideDown()
     })
   }, function(){
     $(this).children('.hidden_info').slideUp( function() {
-      post.children('.more').fadeIn()
+      post.children('.more').slideDown()
     })
   })
 }

@@ -1,13 +1,4 @@
-<div id='personal_info_banner' class='post'>
-  <%= image_tag('profile_pic.jpg', :id => 'profile_pic_banner') %>
-  <div id='banner_logos'>
-    <%= image_tag('linkedin_logo.png', :class => 'logo') %>
-    <%= image_tag('github_logo.png', :class => 'logo') %>
-    <%= image_tag('resume_logo.png', :class => 'logo') %>
-    <%= image_tag('email_logo.png', :class => 'logo') %>
-  </div>
-  <h1 class='post_title'>Gary Hammell</h1>
-</div>
+<%= render 'banner' %>
 
 <div id='personal_info' class='post'>
   <%= image_tag('profile_pic.jpg', :id => 'profile_pic') %>
@@ -18,6 +9,7 @@
     <br><br>
     Three years in the finance industry provided me optimal experience solving problems, working on teams, and making an impact cross functionally. I'm ready to apply myself further by contributing to exciting web applications, dreaming up new ideas, and coding those ideas into reality.
   </p>
+  <%= render 'logos' %>
 </div>
 
 <h1 id='project_headline'>Projects:</h1>
