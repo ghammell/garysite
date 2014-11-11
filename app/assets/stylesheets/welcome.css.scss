@@ -205,10 +205,10 @@ footer {
   }
 
   #moon_image {
-    /*position: absolute;*/
+    position: absolute;
     height: 200px;
     bottom: -25px;
-    right: 0px;
+    left: 0px;
     z-index: -1;
   }
 
