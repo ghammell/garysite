@@ -2,7 +2,7 @@ $(document).ready(function(){
   window.onbeforeunload = function(){
     window.scrollTo(0,0);
   }
-  bindScrollOnMoon('#moon_image', 'left')
+  // bindScrollOnMoon('#moon_image', 'left')
 })
 
 
