@@ -211,6 +211,7 @@ footer {
     bottom:0;
     right: 0px;
     z-index: 1;
+    width: 600px;
   }
 
   #moon_image {
@@ -224,8 +225,8 @@ footer {
   #golden_gate_image {
     position: absolute;
     /*height: 200px;*/
-    width: 400px;
-    bottom: -15px;
+    width: 300px;
+    bottom: -5px;
     left: -50px;
   }
 }
